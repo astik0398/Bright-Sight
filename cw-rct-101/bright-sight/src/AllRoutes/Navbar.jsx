@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Img, Button, Link, Heading } from "@chakra-ui/react";
+import { Img, Button, Link, Heading, Avatar } from "@chakra-ui/react";
 import { NavLink as RouterLink, useNavigate } from "react-router-dom";
 import source from "../Images/Bright_Sight-removebg-preview.png";
 import { AuthContext } from "../AuthContext/AuthContextProvider";
@@ -77,7 +77,7 @@ const Navbar = () => {
 
       <div>
 
-      {isAuth ? (<span style={{display:'flex', gap: '15px', marginRight:'20px'}}> <Heading marginTop="5px" size="sm"> {token} </Heading>  <Button onClick={handlelogout} colorScheme="green" size="sm" variant="outline" width="75px">
+      {isAuth ? (<span style={{display:'flex', gap: '15px', marginRight:'20px'}}> <Avatar color='white' size='sm' name={token} src='https://bit.ly/tioluwani-kolawole' />  <Heading marginTop="5px" size="sm"> {token} </Heading>  <Button onClick={handlelogout} colorScheme="green" size="sm" variant="outline" width="75px">
         <Link _hover={{ textDecoration: "none" }} as={RouterLink} to="/login">
           Log Out
         </Link>

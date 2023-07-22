@@ -14,9 +14,9 @@ const Pagination = ({currentpage, handlePage, totalBtnReq}) => {
 
   return (
     <div style={{marginBottom:'40px', marginTop:'40px'}}>
-        <Button style={{boxShadow: '0 4px 15px 0 rgba(65, 132, 234, 0.75)', color:"white",  borderRadius:'40px' ,backgroundImage: 'linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed'}}  isDisabled={currentpage === 1} onClick={handlePrev}>PREV</Button>
-        <Button style={{marginLeft:'10px', backgroundColor:'lightgrey', borderRadius:'40%' , color:'white'}} > <b>{currentpage}</b></Button>
-        <Button style={{ boxShadow: '0 4px 15px 0 rgba(65, 132, 234, 0.75)', color:"white" ,borderRadius:'40px'  , marginLeft:'10px', backgroundImage: 'linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed'}} isDisabled={currentpage >= totalBtnReq} onClick={handleNext}>NEXT</Button>
+        <Button style={{backgroundColor:'white', borderRadius: '15px', boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px', color:'#DF4C73'}}  isDisabled={currentpage === 1} onClick={handlePrev}> <b>PREV</b> </Button>
+        <Button style={{backgroundColor:'white', borderRadius: '15px', boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px', color:'#DF4C73', marginLeft:'20px'}} > <b>{currentpage}</b></Button>
+        <Button style={{backgroundColor:'white', borderRadius: '15px', boxShadow: 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px', color:'#DF4C73', marginLeft:'20px'}} isDisabled={currentpage >= totalBtnReq} onClick={handleNext}> <b>NEXT</b> </Button>
     </div>
   )
 }

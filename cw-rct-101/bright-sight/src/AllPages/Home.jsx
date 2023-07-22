@@ -506,7 +506,7 @@ function Home() {
             }}
           >
             <VStack style={{ color: "#DF4C73" }}>
-              <Img width='120px' src="https://cdn0.iconfinder.com/data/icons/medical-health-care-1-1/256/Hospital-512.png" />
+              <Img width='120px' src="https://cdn-icons-png.flaticon.com/512/5891/5891622.png" />
               <Heading as="h3">Largest network of hospitals</Heading>
             </VStack>
 
@@ -531,7 +531,7 @@ function Home() {
             }}
           >
             <VStack style={{ color: "#DF4C73" }}>
-              <Img width='120px' src="https://cdn-icons-png.flaticon.com/512/5015/5015696.png" />
+              <Img width='120px' src="https://cdn-icons-png.flaticon.com/512/6069/6069174.png" />
               <Heading as="h3">Dedicated, expert doctors</Heading>
             </VStack>
 
@@ -556,7 +556,7 @@ function Home() {
             }}
           >
             <VStack style={{ color: "#DF4C73" }}>
-              <Img width='120px' src="https://cdn-icons-png.flaticon.com/512/150/150625.png" />
+              <Img width='120px' src="https://cdn-icons-png.flaticon.com/512/8058/8058082.png" />
               <Heading as="h3">State-of-the-art technology</Heading>
             </VStack>
 
@@ -575,14 +575,14 @@ function Home() {
               display: "flex",
               padding: "35px",
               flexDirection: "column",
-              gap: "50px",
+              gap: "30px",
               justifyContent: "center",
               alignItems: "center",
             }}
           >
             <VStack style={{ color: "#DF4C73" }}>
-              <Img width='120px' src="https://img.freepik.com/free-icon/doctor_318-643631.jpg?w=360" />
-              <Heading as="h3">Well trained Care staff</Heading>
+              <Img marginTop='15px' width='150px' src="https://uploads-ssl.webflow.com/61deef77fd7403ce8e013517/61deef77fd74037f6601356b_home-2.png" />
+              <Heading  as="h3">Well trained Care staff</Heading>
             </VStack>
 
             <Text>

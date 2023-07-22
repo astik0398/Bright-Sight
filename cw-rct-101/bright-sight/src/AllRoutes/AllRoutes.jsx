@@ -8,6 +8,7 @@ import AboutUs from "../AllPages/AboutUs";
 import Signup from "../AllPages/Signup";
 import Singleuserpage from "../AllPages/Singleuserpage";
 import Contact from "../AllPages/Contact";
+import PrivateRoute from "../AuthContext/PrivateRoute";
 
 const AllRoutes = () => {
   return (
@@ -15,7 +16,11 @@ const AllRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={
+        <PrivateRoute>
+          <Services />
+        </PrivateRoute>
+        } />
         <Route path="/counselors" element={<Counselors />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/signup" element={<Signup />} />
