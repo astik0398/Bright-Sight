@@ -14,7 +14,9 @@ const Counselors = () => {
 
   // const [bookings, setBookings] = useState([])
 
-  const bookings = []
+  const bookings = JSON.parse(localStorage.getItem("booking")) || []
+
+  // const bookings = []
 
   const navigate = useNavigate()
 
@@ -56,16 +58,15 @@ const Counselors = () => {
 
     // setBookings([...bookings, item])
 
-    alert(`Your appointment is booked with ${name}`)
-    // slot = slot-1
-
     bookings.push(item)
 
-    console.log(bookings);
+    localStorage.setItem("booking", JSON.stringify(bookings))
+
+    // console.log(item);
+
+    alert(`Your appointment is booked with ${name}`)
     
   }
-  
-
 
   return (
     <div>
@@ -132,12 +133,6 @@ const Counselors = () => {
       </div>
 
       <Pagination currentpage={page} handlePage={handlePage} totalBtnReq={totalBtnReq}/>
-
-      <Services {...bookings}/>
-
-      {/* {bookings.map((item)=>{
-      return <Services {...item}/>
-    })} */}
       
     </div>
   )
