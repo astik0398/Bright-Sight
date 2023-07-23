@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Getting started with Bright Sight
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Bright Sight! Bright Sight help patients, book appointments with ophthalmologists and manage their bookings conveniently. Below, you will find important information about the website, its features, and how to get started.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+Bright Sight is a platform that connects patients with ophthalmologists. Patients can browse through a list of doctors, schedule appointments, and manage their bookings. The website provides a user-friendly interface for easy navigation and a seamless experience for both patients and doctors.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bright Sight comes with the following key features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## `Doctors Page:`
+A comprehensive list of ophthalmologists with their profiles, qualifications, and areas of expertise. Patients can view details about each doctor to make an informed decision.
 
-### `npm test`
+## `Login and Signup:`
+Users can create an account or log in with their existing credentials. This allows patients to book appointments and access their personal booking history.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## `My Bookings Page:`
+A dedicated section for logged-in patients to view their upcoming and past appointments. Patients can also cancel their appointments from this page.
 
-### `npm run build`
+## Technologies Used:
+The website is built using a combination of front-end and back-end technologies to ensure a robust and responsive user experience. The primary technologies used are:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## `Front-end:`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+HTML5, CSS3, ChakraUi and JavaScript for creating the user interface.
+Front-end framework (React) for building interactive components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## `Back-end:`
 
-### `npm run eject`
+Server-side scripting language (JSON) to handle server logic.
+Database (JSON) to store user and appointment information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For any inquiries or support related to the website, you can reach out to our team at `bright_sight@gmail.com`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployement:
+The website has been deployed on Netlify manually. To access the deployed link you can visit here [Bright Sight](https://bright-sight.netlify.app/).
