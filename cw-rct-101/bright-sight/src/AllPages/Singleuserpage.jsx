@@ -23,6 +23,10 @@ const Singleuserpage = () => {
 
     const [singleData, setsingleData] = useState([])
 
+    const [dataone, setDataOne] = useState(null)
+    const [datatwo, setDataTwo] = useState(null)
+    const [datathree, setDataThree] = useState(null)
+
     function SingleUserData(){
   
       let API = `https://bright-sight.onrender.com/cpproblems/${id}`
@@ -33,6 +37,9 @@ const Singleuserpage = () => {
       })
       .then(function(data){
         setsingleData(data)
+        setDataOne(data.expertise[0])
+        setDataTwo(data.expertise[1])
+        setDataThree(data.expertise[2])
       })
   
     }
@@ -67,8 +74,8 @@ const Singleuserpage = () => {
 
       <div style={{backgroundColor:'#FFEEE4'}}>
 
-      <div style={{marginLeft:'-1200px', paddingTop:'50px'}}>
-        <Heading size="xl">About <span style={{color:'#DF4C73'}}>{singleData.name}</span>:</Heading>
+      <div style={{ paddingTop:'50px'}}>
+        <Heading marginLeft='10px' textAlign='start' size="xl">About <span style={{color:'#DF4C73'}}>{singleData.name}</span>:</Heading>
       </div>
 
       <div style={{textAlign:'justify'}}>
@@ -93,8 +100,8 @@ const Singleuserpage = () => {
           padding: "15px",
         }}
       >
-        <Heading size="xl" style={{marginLeft:'-1000px', marginBottom: "25px", marginTop: "25px" }}>
-         <span style={{color:'#DF4C73'}}>{singleData.name}</span> offers therapy in :
+        <Heading size="xl" textAlign='start' marginLeft='10px' marginBottom='30px'>
+         <span style={{color:'#DF4C73'}}>{singleData.name}</span> specializes in :
         </Heading>
 
         <div
@@ -123,13 +130,13 @@ const Singleuserpage = () => {
               gap: "30px",
               justifyContent: "center",
               alignItems: "center",
-              height:'300px',
-              width: '220px'
+              // height:'300px',
+              width: '400px'
             }}
           >
             <VStack style={{ color: "#DF4C73" }}>
-              <Img src="https://cdn-icons-png.flaticon.com/512/71/71834.png" />
-              <Heading as="h3">Anger</Heading>
+              <Img src="https://www.eyecarehospital.org/wp-content/uploads/2019/01/Glaucoma.jpg" />
+              <Heading as="h3">{dataone}</Heading>
             </VStack>
 
           </Box>
@@ -147,13 +154,13 @@ const Singleuserpage = () => {
               gap: "30px",
               justifyContent: "center",
               alignItems: "center",
-              height:'300px',
-              width: '220px'
+              // height:'300px',
+              width: '400px'
             }}
           >
             <VStack style={{ color: "#DF4C73" }}>
-              <Img src="https://img.icons8.com/ios7/12x/grief.png" />
-              <Heading as="h3">Grief</Heading>
+              <Img src="https://www.eyecarehospital.org/wp-content/uploads/2019/01/Bladeless-Lasik-Surgery.jpg" />
+              <Heading as="h3">{datatwo}</Heading>
             </VStack>
 
           </Box>
@@ -171,13 +178,13 @@ const Singleuserpage = () => {
               gap: "30px",
               justifyContent: "center",
               alignItems: "center",
-              height:'300px',
-              width: '220px'
+              // height:'300px',
+              width: '400px'
             }}
           >
             <VStack style={{ color: "#DF4C73"}}>
-              <Img src="https://static.thenounproject.com/png/3396226-200.png" />
-              <Heading as="h3">Anxiety</Heading>
+              <Img src="https://www.eyecarehospital.org/wp-content/uploads/2019/01/OptiLasik.jpg" />
+              <Heading as="h3">{datathree}</Heading>
             </VStack>
 
           </Box>

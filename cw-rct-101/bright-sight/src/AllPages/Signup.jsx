@@ -20,7 +20,7 @@ const Signup = () => {
       title: 'Sign Up Success',
       description: "Your account has been created",
       status: 'success',
-      duration: 1000,
+      duration: 2000,
       isClosable: true,
     })
   }
@@ -31,7 +31,7 @@ const Signup = () => {
       title: 'Fill All The Details',
       description: "Above input cannot be empty",
       status: 'error',
-      duration: 1000,
+      duration: 2000,
       isClosable: true,
     })
   }
