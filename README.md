@@ -1,4 +1,4 @@
-## BRIGHTSIGHT WEBSITE:
+# BRIGHTSIGHT WEBSITE:
 
 Welcome to the Bright Sight Website's quick guide! This website is dedicated to providing top-notch ophthalmological services with ease and convenience. Whether you're looking to book an appointment with a specialist or simply seeking information about our experienced doctors, you've come to the right place.
 
